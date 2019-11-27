@@ -1,0 +1,57 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+alpha                                                                             0x0289     100
+db                                                                                0x02ED     864
+str                                                                               0x064D      40
+_base_y                                                                           0x0675       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+saved_db                                                                          0x0000    1024
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+used                                                                              R4,R5        2
+_lcd_x                                                                            R7           1
+_lcd_y                                                                            R6           1
+_lcd_maxx                                                                         R9           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+get_key                                                                           0x000FD     84
+write_alpha                                                                       0x00151    155
+save_to_eeprom                                                                    0x00241     34
+load_from_eeprom                                                                  0x00263     75
+view_contact                                                                      0x002AE    177
+add_contact                                                                       0x0035F     92
+delete_contact                                                                    0x003BB     97
+send_report                                                                       0x0041C     81
+main                                                                              0x0046D    114
+_lcd_write_nibble_G100                                                            0x004DF     21
+_lcd_write_data                                                                   0x004F4     13
+lcd_gotoxy                                                                        0x00501     13
+lcd_clear                                                                         0x0050E     12
+lcd_putchar                                                                       0x0051A     23
+lcd_puts                                                                          0x00531     12
+lcd_init                                                                          0x0053D     46
+getchar                                                                           0x0056B      4
+putchar                                                                           0x0056F      7
+puts                                                                              0x00576     13
+put_usart_G101                                                                    0x00583     10
+put_buff_G101                                                                     0x0058D     57
+_print_G101                                                                       0x005C6    308
+sprintf                                                                           0x006FA     46
+printf                                                                            0x00728     31
+get_usart_G101                                                                    0x00747     22
+_scanf_G101                                                                       0x0075D    322
+scanf                                                                             0x0089F     29
+strcmp                                                                            0x008BC     20
+strlen                                                                            0x008D0     12
+strlenf                                                                           0x008DC     13
+isdigit                                                                           0x008E9      9
+isspace                                                                           0x008F2     11
+isxdigit                                                                          0x008FD     15
